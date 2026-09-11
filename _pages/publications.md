@@ -104,7 +104,7 @@ author_profile: true
     background-color: rgba(20, 25, 35, 0.6);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    z-index: 9999;
+    z-index: 999999 !important;
     align-items: center;
     justify-content: center;
   }
@@ -204,11 +204,17 @@ author_profile: true
   </div>
 </div>
 
+<br>
+<p><em>All published work conducted in collaboration with Qatar University under Prof. Dr. Amith Khandakar.</em></p>
+
 <script>
   const modal = document.getElementById("img-modal");
   const modalImg = document.getElementById("modal-img");
   const images = document.querySelectorAll(".pub-image");
   const closeBtn = document.querySelector(".close-btn");
+
+  // Move the modal out of the markdown content container and directly into the body
+  document.body.appendChild(modal);
 
   images.forEach(img => {
     img.addEventListener("click", function() {
