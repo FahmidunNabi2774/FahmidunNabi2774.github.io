@@ -102,11 +102,11 @@ author_profile: true
 <div class="pub-card">
   <div class="pub-left">
     <div class="pub-badge">NCA</div>
-    <img class="pub-image" src="/images/unet-review-architecture.png" alt="U-Net Review Architecture">
+    <img class="pub-image" src="/images/Taxonomy_UNET.jpg" alt="U-Net Review Architecture">
   </div>
   <div class="pub-right">
     <div class="pub-title">A comprehensive review of U-Net architectures for medical image segmentation: emerging trends and federated learning perspectives</div>
-    <div class="pub-authors">MF Hossen, A Sarkar, T Majumder, <strong>Md. Fahmidun Nabi</strong>, MF Ahamed, FB Shafi, et al.</div>
+    <div class="pub-authors">MF Hossen, A Sarkar, T Majumder, <strong>MF Nabi</strong>, MF Ahamed, FB Shafi, et al.</div>
     <div class="pub-journal">Neural Computing and Applications 38 (12), 493 (2026)</div>
     <a href="#" class="pub-btn">PDF</a>
   </div>
@@ -115,11 +115,11 @@ author_profile: true
 <div class="pub-card">
   <div class="pub-left">
     <div class="pub-badge">Sci Data</div>
-    <img class="pub-image" src="/images/roadsens-architecture.png" alt="RoadSens-4M Dataset Diagram">
+    <img class="pub-image" src="/images/roadsens-data.jpg" alt="RoadSens-4M Dataset Diagram">
   </div>
   <div class="pub-right">
     <div class="pub-title">RoadSens-4M: A multimodal smartphone & camera dataset for holistic road-way analysis</div>
-    <div class="pub-authors">A Khandakar, DG Michelson, SG Rabbani, FB Shafi, MF Ahamed, <strong>Md. Fahmidun Nabi</strong>, et al.</div>
+    <div class="pub-authors">A Khandakar, DG Michelson, SG Rabbani, FB Shafi, MF Ahamed, <strong>MF Nabi</strong>, et al.</div>
     <div class="pub-journal">Scientific Data (2026)</div>
     <a href="#" class="pub-btn">PDF</a>
   </div>
@@ -128,11 +128,11 @@ author_profile: true
 <div class="pub-card">
   <div class="pub-left">
     <div class="pub-badge">AI in Med</div>
-    <img class="pub-image" src="/images/ukan-cbam-architecture.png" alt="UKAN-CBAM Architecture">
+    <img class="pub-image" src="/images/ukan-architecture.jpg" alt="UKAN-CBAM Architecture">
   </div>
   <div class="pub-right">
     <div class="pub-title">Rethinking U-Net architecture in medical imaging: Advancing the efficient and interpretable UKAN-CBAM framework for colorectal polyp segmentation</div>
-    <div class="pub-authors">MF Ahamed, FB Shafi, MR Islam, <strong>Md. Fahmidun Nabi</strong>, J Haider</div>
+    <div class="pub-authors">MF Ahamed, FB Shafi, MR Islam, <strong>MF Nabi</strong>, J Haider</div>
     <div class="pub-journal">Artificial Intelligence in Medicine, 103352 (2026)</div>
     <a href="#" class="pub-btn">PDF</a>
   </div>
@@ -143,11 +143,11 @@ author_profile: true
 <div class="pub-card">
   <div class="pub-left">
     <div class="pub-badge">Results Eng</div>
-    <img class="pub-image" src="/images/sensor-architecture.png" alt="Sensor Architecture">
+    <img class="pub-image" src="/images/cattle-work.jpg" alt="Sensor Architecture">
   </div>
   <div class="pub-right">
     <div class="pub-title">Review of sensor technologies, DC-DC converters, and power electronics for sustainable monitoring in precision livestock farming</div>
-    <div class="pub-authors">FB Shafi, MF Ahamed, <strong>Md. Fahmidun Nabi</strong>, A Khandakar, W Rohouma, MA Ayari, et al.</div>
+    <div class="pub-authors">FB Shafi, MF Ahamed, <strong>MF Nabi</strong>, A Khandakar, W Rohouma, MA Ayari, et al.</div>
     <div class="pub-journal">Results in Engineering, 107975 (2025)</div>
     <a href="#" class="pub-btn">PDF</a>
   </div>
