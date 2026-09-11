@@ -1,9 +1,7 @@
 ---
 layout: single
-title: "Research"
+title: "Ongoing Projects"
 permalink: /research/
 author_profile: true
 ---
-
-## Ongoing Research
 
