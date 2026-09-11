@@ -46,12 +46,10 @@ author_profile: true
     border-radius: 6px;
     border: 1px solid #eaedf0;
     object-fit: cover;
-    cursor: pointer;
+    cursor: zoom-in;
     transition: opacity 0.2s ease;
   }
-  .pub-image:hover {
-    opacity: 0.85;
-  }
+  .pub-image:hover { opacity: 0.85; }
   .pub-right {
     display: flex;
     flex-direction: column;
@@ -89,58 +87,10 @@ author_profile: true
     width: max-content;
     transition: background-color 0.2s ease;
   }
-  .pub-btn:hover {
-    background: #e1e4e8;
-  }
-  
-  /* Lightbox Overlay */
-  #img-modal {
-    display: none;
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    background-color: rgba(20, 25, 35, 0.6);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    z-index: 99999999 !important;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  #img-modal img {
-    max-width: 85%;
-    max-height: 85%;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  }
-  .close-btn {
-    position: absolute;
-    top: 25px;
-    right: 35px;
-    color: #ffffff;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-    opacity: 0.8;
-  }
-  .close-btn:hover {
-    opacity: 1;
-  }
-
-  /* Mobile Responsiveness */
+  .pub-btn:hover { background: #e1e4e8; }
   @media (max-width: 768px) {
-    .pub-card {
-      flex-direction: column;
-      align-items: center;
-    }
-    .pub-left {
-      width: 100%;
-      max-width: 300px;
-      margin-bottom: 16px;
-    }
+    .pub-card { flex-direction: column; align-items: center; }
+    .pub-left { width: 100%; max-width: 300px; margin-bottom: 16px; }
   }
 </style>
 
@@ -204,38 +154,85 @@ author_profile: true
 <p><em>All published work conducted in collaboration with Qatar University under Prof. Dr. Amith Khandakar.</em></p>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Generate the modal directly onto the body element to bypass main content wrappers
-    if (!document.getElementById("img-modal")) {
-      const modalHtml = `
-        <div id="img-modal">
-          <span class="close-btn">&times;</span>
-          <img id="modal-img" src="" alt="Expanded View">
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', modalHtml);
-    }
+document.addEventListener("DOMContentLoaded", function () {
 
-    const modal = document.getElementById("img-modal");
-    const modalImg = document.getElementById("modal-img");
-    const images = document.querySelectorAll(".pub-image");
-    const closeBtn = document.querySelector(".close-btn");
+  // Build modal entirely with inline styles — bypasses all theme CSS
+  var overlay = document.createElement("div");
+  Object.assign(overlay.style, {
+    display: "none",
+    position: "fixed",
+    top: "0",
+    left: "0",
+    width: "100vw",
+    height: "100vh",
+    zIndex: "2147483647",
+    backgroundColor: "rgba(10, 10, 20, 0.75)",
+    backdropFilter: "blur(10px)",
+    webkitBackdropFilter: "blur(10px)",
+    alignItems: "center",
+    justifyContent: "center",
+    cursor: "zoom-out"
+  });
 
-    images.forEach(img => {
-      img.addEventListener("click", function() {
-        modal.style.display = "flex";
-        modalImg.src = this.src;
-      });
-    });
+  var modalImg = document.createElement("img");
+  Object.assign(modalImg.style, {
+    maxWidth: "85vw",
+    maxHeight: "85vh",
+    borderRadius: "10px",
+    boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
+    cursor: "default",
+    display: "block"
+  });
 
-    closeBtn.addEventListener("click", function() {
-      modal.style.display = "none";
-    });
+  var closeBtn = document.createElement("span");
+  closeBtn.innerHTML = "&times;";
+  Object.assign(closeBtn.style, {
+    position: "absolute",
+    top: "20px",
+    right: "30px",
+    color: "#ffffff",
+    fontSize: "40px",
+    fontWeight: "bold",
+    cursor: "pointer",
+    lineHeight: "1",
+    opacity: "0.85",
+    userSelect: "none"
+  });
+  closeBtn.onmouseenter = function () { this.style.opacity = "1"; };
+  closeBtn.onmouseleave = function () { this.style.opacity = "0.85"; };
 
-    modal.addEventListener("click", function(e) {
-      if (e.target === modal) {
-        modal.style.display = "none";
-      }
+  overlay.appendChild(closeBtn);
+  overlay.appendChild(modalImg);
+  document.body.appendChild(overlay);
+
+  function openModal(src) {
+    modalImg.src = src;
+    overlay.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    overlay.style.display = "none";
+    document.body.style.overflow = "";
+    modalImg.src = "";
+  }
+
+  // Attach click to all pub images
+  document.querySelectorAll(".pub-image").forEach(function (img) {
+    img.addEventListener("click", function () {
+      openModal(this.src);
     });
   });
+
+  closeBtn.addEventListener("click", closeModal);
+
+  overlay.addEventListener("click", function (e) {
+    if (e.target === overlay) closeModal();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeModal();
+  });
+
+});
 </script>
