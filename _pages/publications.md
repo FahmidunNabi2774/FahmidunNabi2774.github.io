@@ -97,20 +97,7 @@ author_profile: true
   }
 </style>
 
-## Published
-
-<div class="pub-card">
-  <div class="pub-left">
-    <div class="pub-badge">Results Eng</div>
-    <img class="pub-image" src="/images/sensor-architecture.png" alt="Sensor Architecture">
-  </div>
-  <div class="pub-right">
-    <div class="pub-title">Review of sensor technologies, DC-DC converters, and power electronics for sustainable monitoring in precision livestock farming</div>
-    <div class="pub-authors">FB Shafi, MF Ahamed, <strong>Md. Fahmidun Nabi</strong>, A Khandakar, W Rohouma, MA Ayari, et al.</div>
-    <div class="pub-journal">Results in Engineering, 107975 (2025)</div>
-    <a href="#" class="pub-btn">PDF</a>
-  </div>
-</div>
+## 2026
 
 <div class="pub-card">
   <div class="pub-left">
@@ -147,6 +134,21 @@ author_profile: true
     <div class="pub-title">Rethinking U-Net architecture in medical imaging: Advancing the efficient and interpretable UKAN-CBAM framework for colorectal polyp segmentation</div>
     <div class="pub-authors">MF Ahamed, FB Shafi, MR Islam, <strong>Md. Fahmidun Nabi</strong>, J Haider</div>
     <div class="pub-journal">Artificial Intelligence in Medicine, 103352 (2026)</div>
+    <a href="#" class="pub-btn">PDF</a>
+  </div>
+</div>
+
+## 2025
+
+<div class="pub-card">
+  <div class="pub-left">
+    <div class="pub-badge">Results Eng</div>
+    <img class="pub-image" src="/images/sensor-architecture.png" alt="Sensor Architecture">
+  </div>
+  <div class="pub-right">
+    <div class="pub-title">Review of sensor technologies, DC-DC converters, and power electronics for sustainable monitoring in precision livestock farming</div>
+    <div class="pub-authors">FB Shafi, MF Ahamed, <strong>Md. Fahmidun Nabi</strong>, A Khandakar, W Rohouma, MA Ayari, et al.</div>
+    <div class="pub-journal">Results in Engineering, 107975 (2025)</div>
     <a href="#" class="pub-btn">PDF</a>
   </div>
 </div>
