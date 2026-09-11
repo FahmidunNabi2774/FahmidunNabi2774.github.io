@@ -17,6 +17,11 @@ author_profile: true
     box-shadow: 0 4px 6px rgba(0,0,0,0.04);
     gap: 24px;
     align-items: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .pub-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
   }
   .pub-left {
     display: flex;
@@ -41,6 +46,11 @@ author_profile: true
     border-radius: 6px;
     border: 1px solid #eaedf0;
     object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  .pub-image:hover {
+    opacity: 0.85;
   }
   .pub-right {
     display: flex;
@@ -83,6 +93,41 @@ author_profile: true
     background: #e1e4e8;
   }
   
+  /* Lightbox Overlay */
+  #img-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 25, 35, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+  }
+  #img-modal img {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  .close-btn {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .close-btn:hover {
+    opacity: 1;
+  }
+
   /* Mobile Responsiveness */
   @media (max-width: 768px) {
     .pub-card {
@@ -96,6 +141,12 @@ author_profile: true
     }
   }
 </style>
+
+<!-- Hidden overlay container -->
+<div id="img-modal">
+  <span class="close-btn">&times;</span>
+  <img id="modal-img" src="" alt="Expanded View">
+</div>
 
 ## 2026
 
@@ -153,5 +204,26 @@ author_profile: true
   </div>
 </div>
 
-<br>
-<p><em>All published work conducted in collaboration with Qatar University under Prof. Dr. Amith Khandakar.</em></p>
+<script>
+  const modal = document.getElementById("img-modal");
+  const modalImg = document.getElementById("modal-img");
+  const images = document.querySelectorAll(".pub-image");
+  const closeBtn = document.querySelector(".close-btn");
+
+  images.forEach(img => {
+    img.addEventListener("click", function() {
+      modal.style.display = "flex";
+      modalImg.src = this.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
