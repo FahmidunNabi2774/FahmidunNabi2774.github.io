@@ -8,23 +8,22 @@ redirect_from:
   - /about.html
 ---
 
-I am a final-year B.Sc. student in the Department of **Electrical and Computer Engineering (ECE)** at Rajshahi University of Engineering and Technology (RUET), Bangladesh, graduating in 2027 with a CGPA of **3.86 / 4.00**. I am a critical thinker who approaches engineering fundamentals from first principles, with a deep interest in the intersection of **mathematics, theoretical computer science, and artificial intelligence**. My research interests span **deep learning architectures** (U-Net variants, Graph Neural Networks, attention mechanisms) applied to healthcare, biomedical imaging, and signal processing. I have worked as a **Research Assistant at Qatar University** under Prof. Dr. Amith Khandakar and contributing to multiple Q1-indexed journal publications across sensor systems, road datasets, and medical image segmentation. My undergraduate thesis focuses on **Graph Neural Networks and spectral attention mechanisms**, building on the foundational work "Rethinking Graph Transformers using Spectral Attention Mechanism" by researchers at MILA Canada. I aim to re-derive and extend the spectral attention formulation within the GNN framework.My long-term goal is to pursue a **Ph.D. at a globally reputed university**, specializing in AI, machine learning, and theoretical CS — and to return as an influential researcher and educator who advances these fields in Bangladesh and beyond.
+I am a final-year B.Sc. student in the Department of Electrical and Computer Engineering (ECE) at Rajshahi University of Engineering and Technology (RUET), Bangladesh. I have worked as a Research Assistant at Qatar University under Prof. [Dr. Amith Khandakar](https://sites.google.com/view/amith-khandakar/about) in domains of signal processing, AI in healthcare, precision livestock farming, thermal imaging and effectiveness of biomedical sensors along with interdisciplinary research of theoretical computer science, natural language processing. Currently, my undergraduate [thesis](/thesis/) focuses on spectral graph theory in analyzing sign invariant structures for graph transformers supervised by [Md. Faysal Ahamed](https://www.ruet.ac.bd/faysalahamed).
+
+Research is all about doubts that make us move forward and verify our existence, quoting René Descartes' *"Cogito Ergo Sum"* (I Think, Therefore I Am).
+
+> 📬 **Actively Seeking PhD Opportunities.** Please contact me via [email](mailto:nabifahmid2774@gmail.com) for collaboration in research projects.
+
+---
 
 ## Research Interests
 
-`Deep Learning` &nbsp; `Graph Neural Networks` &nbsp; `Spectral Attention` &nbsp; `Medical Image Segmentation` &nbsp; `Signal Processing` &nbsp; `AI for Healthcare`
+`Spectral Graph Theory` &nbsp; `Graph Neural Networks` &nbsp; `Signal Processing` &nbsp; `AI for Healthcare` &nbsp; `Thermal Imaging` &nbsp; `Biomedical Sensors` &nbsp; `Natural Language Processing` &nbsp; `Theoretical Computer Science`
+
+---
 
 ## Education
 
-**B.Sc. in Electrical and Computer Engineering** &nbsp;|&nbsp; RUET, Bangladesh &nbsp;|&nbsp; Dec 2022 – Present
-CGPA: 3.86 / 4.00
-
-**SSC & HSC** &nbsp;|&nbsp; Jhenidah Cadet College &nbsp;|&nbsp; Jan 2015 – Dec 2021
-GPA: 5.00 / 5.00
-
-## Selected Publications
-
-- **2nd Author** — *EEG-Based Cognitive Workload Assessment for Neuroergonomic Systems: A Comprehensive Review* (Under Review)
-- **3rd Author** — *Review of Sensor Technologies, DC-DC Converters, and Power Electronics for Sustainable Monitoring in Precision Livestock Farming* — **Results in Engineering** (Q1)
-- **4th Author** — *Rethinking U-Net Architecture in Medical Imaging: Advancing the Efficient and Interpretable UKAN-CBAM Framework for Colorectal Polyp Segmentation* — **Artificial Intelligence in Medicine** (Q1)
-- **Data Contribution** — *RoadSens-4M: A Multimodal Smartphone and Camera Dataset for Holistic Road-way Analysis* — **Scientific Data**
+* B.Sc. in Electrical & Computer Engineering (ECE), Rajshahi University of Engineering & Technology (RUET), Bangladesh *(Ongoing)*
+* Higher School Certificate (HSC), Jhenidah Cadet College
+* Secondary School Certificate (SSC), Jhenidah Cadet College
