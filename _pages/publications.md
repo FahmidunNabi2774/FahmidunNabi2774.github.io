@@ -49,8 +49,8 @@ author_profile: true
     flex-grow: 1;
   }
   .pub-title {
-    font-size: 1.15em;
-    font-weight: 700;
+    font-size: 1.05em;
+    font-weight: 600;
     line-height: 1.3;
     margin-bottom: 8px;
     color: #24292e;
@@ -75,13 +75,12 @@ author_profile: true
     border-radius: 20px;
     font-size: 0.85em;
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: none !important;
     width: max-content;
     transition: background-color 0.2s ease;
   }
   .pub-btn:hover {
     background: #e1e4e8;
-    text-decoration: none;
   }
   
   /* Mobile Responsiveness */
@@ -98,34 +97,6 @@ author_profile: true
   }
 </style>
 
-## Under Review
-
-<div class="pub-card">
-  <div class="pub-left">
-    <div class="pub-badge">Under Review</div>
-    <img class="pub-image" src="/images/eeg-architecture.png" alt="EEG Architecture">
-  </div>
-  <div class="pub-right">
-    <div class="pub-title">EEG-Based Cognitive Workload Assessment for Neuroergonomic Systems: A Comprehensive Review</div>
-    <div class="pub-authors">1st Author, <u>Md. Fahmidun Nabi</u>, 3rd Author</div>
-    <div class="pub-journal">Submitted to a Q1 Journal</div>
-    <a href="#" class="pub-btn">PDF</a>
-  </div>
-</div>
-
-<div class="pub-card">
-  <div class="pub-left">
-    <div class="pub-badge">Under Review</div>
-    <img class="pub-image" src="/images/unet-architecture.png" alt="U-Net Architecture">
-  </div>
-  <div class="pub-right">
-    <div class="pub-title">Advancing Medical Image Segmentation: A Comprehensive Review of Various U-Net Architectures, Applications, and Emerging Trends</div>
-    <div class="pub-authors">1st Author, 2nd Author, 3rd Author, <u>Md. Fahmidun Nabi</u></div>
-    <div class="pub-journal">Submitted to a Q1 Journal</div>
-    <a href="#" class="pub-btn">PDF</a>
-  </div>
-</div>
-
 ## Published
 
 <div class="pub-card">
@@ -134,22 +105,22 @@ author_profile: true
     <img class="pub-image" src="/images/sensor-architecture.png" alt="Sensor Architecture">
   </div>
   <div class="pub-right">
-    <div class="pub-title">Review of Sensor Technologies, DC-DC Converters, and Power Electronics for Sustainable Monitoring in Precision Livestock Farming</div>
-    <div class="pub-authors">1st Author, 2nd Author, <u>Md. Fahmidun Nabi</u></div>
-    <div class="pub-journal">Results in Engineering — Elsevier (Q1)</div>
+    <div class="pub-title">Review of sensor technologies, DC-DC converters, and power electronics for sustainable monitoring in precision livestock farming</div>
+    <div class="pub-authors">FB Shafi, MF Ahamed, <strong>Md. Fahmidun Nabi</strong>, A Khandakar, W Rohouma, MA Ayari, et al.</div>
+    <div class="pub-journal">Results in Engineering, 107975 (2025)</div>
     <a href="#" class="pub-btn">PDF</a>
   </div>
 </div>
 
 <div class="pub-card">
   <div class="pub-left">
-    <div class="pub-badge">AI in Med</div>
-    <img class="pub-image" src="/images/ukan-cbam-architecture.png" alt="UKAN-CBAM Architecture">
+    <div class="pub-badge">NCA</div>
+    <img class="pub-image" src="/images/unet-review-architecture.png" alt="U-Net Review Architecture">
   </div>
   <div class="pub-right">
-    <div class="pub-title">Rethinking U-Net Architecture in Medical Imaging: Advancing the Efficient and Interpretable UKAN-CBAM Framework for Colorectal Polyp Segmentation</div>
-    <div class="pub-authors">1st Author, 2nd Author, 3rd Author, <u>Md. Fahmidun Nabi</u></div>
-    <div class="pub-journal">Artificial Intelligence in Medicine — Elsevier (Q1)</div>
+    <div class="pub-title">A comprehensive review of U-Net architectures for medical image segmentation: emerging trends and federated learning perspectives</div>
+    <div class="pub-authors">MF Hossen, A Sarkar, T Majumder, <strong>Md. Fahmidun Nabi</strong>, MF Ahamed, FB Shafi, et al.</div>
+    <div class="pub-journal">Neural Computing and Applications 38 (12), 493 (2026)</div>
     <a href="#" class="pub-btn">PDF</a>
   </div>
 </div>
@@ -160,9 +131,22 @@ author_profile: true
     <img class="pub-image" src="/images/roadsens-architecture.png" alt="RoadSens-4M Dataset Diagram">
   </div>
   <div class="pub-right">
-    <div class="pub-title">RoadSens-4M: A Multimodal Smartphone and Camera Dataset for Holistic Road-way Analysis</div>
-    <div class="pub-authors">1st Author, 2nd Author, <u>Md. Fahmidun Nabi</u>, et al.</div>
-    <div class="pub-journal">Scientific Data — Nature Portfolio</div>
+    <div class="pub-title">RoadSens-4M: A multimodal smartphone & camera dataset for holistic road-way analysis</div>
+    <div class="pub-authors">A Khandakar, DG Michelson, SG Rabbani, FB Shafi, MF Ahamed, <strong>Md. Fahmidun Nabi</strong>, et al.</div>
+    <div class="pub-journal">Scientific Data (2026)</div>
+    <a href="#" class="pub-btn">PDF</a>
+  </div>
+</div>
+
+<div class="pub-card">
+  <div class="pub-left">
+    <div class="pub-badge">AI in Med</div>
+    <img class="pub-image" src="/images/ukan-cbam-architecture.png" alt="UKAN-CBAM Architecture">
+  </div>
+  <div class="pub-right">
+    <div class="pub-title">Rethinking U-Net architecture in medical imaging: Advancing the efficient and interpretable UKAN-CBAM framework for colorectal polyp segmentation</div>
+    <div class="pub-authors">MF Ahamed, FB Shafi, MR Islam, <strong>Md. Fahmidun Nabi</strong>, J Haider</div>
+    <div class="pub-journal">Artificial Intelligence in Medicine, 103352 (2026)</div>
     <a href="#" class="pub-btn">PDF</a>
   </div>
 </div>
