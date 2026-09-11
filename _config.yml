@@ -49,9 +49,9 @@ author:
   location         : "Rajshahi, Bangladesh"
   employer         :
   pubmed           :
-  googlescholar    :
+  googlescholar    : "https://scholar.google.com/citations?user=-hZr3WoAAAAJ&hl=en"
   email            : "nabifahmid2774@gmail.com"
-  researchgate     :
+  researchgate     : "https://www.researchgate.net/profile/Md-Nabi-18?ev=hdr_xprf"
   uri              :
   bitbucket        :
   codepen          :
@@ -66,7 +66,7 @@ author:
   impactstory      :
   lastfm           :
   linkedin         :
-  orcid            :
+  orcid            : "https://orcid.org/my-orcid?orcid=0009-0009-1166-3188"
   pinterest        :
   soundcloud       :
   stackoverflow    :
@@ -78,7 +78,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  kaggle           : "FahmidunNabi2774"
+  kaggle           : 
 
 # Reading Files
 include:
