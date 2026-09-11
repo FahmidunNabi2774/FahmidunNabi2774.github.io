@@ -155,7 +155,6 @@ author_profile: true
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
   // Build modal entirely with inline styles — bypasses all theme CSS
   var overlay = document.createElement("div");
   Object.assign(overlay.style, {
@@ -233,6 +232,5 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeModal();
   });
-
 });
 </script>
