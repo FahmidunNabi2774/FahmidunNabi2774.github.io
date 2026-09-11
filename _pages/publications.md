@@ -96,17 +96,19 @@ author_profile: true
   /* Lightbox Overlay */
   #img-modal {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
     background-color: rgba(20, 25, 35, 0.6);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    z-index: 999999 !important;
+    z-index: 99999999 !important;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
   }
   #img-modal img {
     max-width: 85%;
@@ -141,12 +143,6 @@ author_profile: true
     }
   }
 </style>
-
-<!-- Hidden overlay container -->
-<div id="img-modal">
-  <span class="close-btn">&times;</span>
-  <img id="modal-img" src="" alt="Expanded View">
-</div>
 
 ## 2026
 
@@ -208,28 +204,38 @@ author_profile: true
 <p><em>All published work conducted in collaboration with Qatar University under Prof. Dr. Amith Khandakar.</em></p>
 
 <script>
-  const modal = document.getElementById("img-modal");
-  const modalImg = document.getElementById("modal-img");
-  const images = document.querySelectorAll(".pub-image");
-  const closeBtn = document.querySelector(".close-btn");
-
-  // Move the modal out of the markdown content container and directly into the body
-  document.body.appendChild(modal);
-
-  images.forEach(img => {
-    img.addEventListener("click", function() {
-      modal.style.display = "flex";
-      modalImg.src = this.src;
-    });
-  });
-
-  closeBtn.addEventListener("click", function() {
-    modal.style.display = "none";
-  });
-
-  modal.addEventListener("click", function(e) {
-    if (e.target === modal) {
-      modal.style.display = "none";
+  document.addEventListener("DOMContentLoaded", function() {
+    // Generate the modal directly onto the body element to bypass main content wrappers
+    if (!document.getElementById("img-modal")) {
+      const modalHtml = `
+        <div id="img-modal">
+          <span class="close-btn">&times;</span>
+          <img id="modal-img" src="" alt="Expanded View">
+        </div>
+      `;
+      document.body.insertAdjacentHTML('beforeend', modalHtml);
     }
+
+    const modal = document.getElementById("img-modal");
+    const modalImg = document.getElementById("modal-img");
+    const images = document.querySelectorAll(".pub-image");
+    const closeBtn = document.querySelector(".close-btn");
+
+    images.forEach(img => {
+      img.addEventListener("click", function() {
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+      });
+    });
+
+    closeBtn.addEventListener("click", function() {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", function(e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
   });
 </script>
