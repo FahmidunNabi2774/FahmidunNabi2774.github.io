@@ -18,5 +18,5 @@ This thesis addresses the problem of constructing **sign invariant** positional 
 - Theoretical characterization of sign equivariant and sign invariant functions on Laplacian eigenvectors
 - Analysis of spectral attention mechanisms in graph transformers through the lens of sign invariance
 - Extension of the framework introduced in *"Rethinking Graph Transformers with Spectral Attention"* (MILA Canada)
----
+- 
 *This page will be updated progressively as the thesis develops.*
