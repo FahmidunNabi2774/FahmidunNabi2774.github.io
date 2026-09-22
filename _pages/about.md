@@ -12,13 +12,13 @@ I am a final-year B.Sc. student in the Department of Electrical and Computer Eng
 
 Research is all about doubts that make us move forward and verify our existence, quoting René Descartes' *"Cogito Ergo Sum"* (I Think, Therefore I Am).
 
-> 📬 **Actively Seeking PhD Opportunities.** Please contact me via [email](mailto:nabifahmid2774@gmail.com) for collaboration in research projects.
+> 📬 **Please contact me via [email](mailto:nabifahmid2774@gmail.com) for collaboration in research projects** 
 
 ---
 
 ## Research Interests
 
-`Spectral Graph Theory` &nbsp; `Graph Neural Networks` &nbsp; `Signal Processing` &nbsp; `AI for Healthcare` &nbsp; `Thermal Imaging` &nbsp; `Biomedical Sensors` &nbsp; `Natural Language Processing` &nbsp; `Theoretical Computer Science`
+`Spectral Graph Theory` &nbsp; `Graph Neural Networks` &nbsp; `Signal & Image Processing` &nbsp; `Biomedical Image Analysis` &nbsp; `Natural Language Processing` 
 
 ---
 
