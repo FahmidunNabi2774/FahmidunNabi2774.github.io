@@ -20,15 +20,16 @@ This thesis addresses the problem of constructing **sign invariant** positional 
 - Extension of the framework introduced in *"Rethinking Graph Transformers with Spectral Attention"* (MILA Canada)
 
 ---
-<div style="display: flex; justify-content: center; margin: 30px 0;">
-  <iframe
-    width="900"
-    height="506"
-    src="https://www.youtube.com/watch?v=Y9cl32J1zVA"
-    title="A Sign Invariant and Efficient Spectral Positional Encoding for Graph Transformers"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+<div style="max-width: 900px; margin: 30px auto;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe
+      src="https://www.youtube.com/embed/Y9cl32J1zVA"
+      title="A Sign Invariant and Efficient Spectral Positional Encoding for Graph Transformers"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
 ---
